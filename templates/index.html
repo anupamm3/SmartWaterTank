@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Level Monitor</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+        
+</head>
+<body>
+    <div class="container">
+        <h1>Water Level Monitor</h1>
+        <p>Monitor the water level of your tank in real-time and receive notifications.</p>
+        
+        <div id="tank">
+            <div id="water"></div>
+        </div>
+        
+        <div id="waterLevel">0%</div>
+        <div id="anomalyAlert" style="display:none;"></div>
+        
+        <div id="_em_">Add email of neighbour</div>
+        <div id="emailForm">
+            <input type="email" id="emailInput" placeholder="Enter neighbor's email" required>
+            <button onclick="addEmail()">Add Email</button>
+            <div id="message"></div>
+        </div>
+    </div>
+    
+    <footer>-----Developed by Harman,Nakul,Anupam,Chandu-----</footer>
+</body>
+</html>
