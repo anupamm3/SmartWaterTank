@@ -1,0 +1,1 @@
+This project is an IoT-based water level monitoring system that helps prevent water wastage by notifying the owner and neighbors when the tank is about to overflow. The system continuously monitors water levels and sends automated email alerts when predefined thresholds are reached
